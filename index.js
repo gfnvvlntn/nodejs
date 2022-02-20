@@ -1,11 +1,11 @@
-const App = require("./src/utils/App");
-const { PORT, BASEURL } = require("./src/constants");
+import App from "./src/utils/App.js";
+import { PORT, BASEURL } from "./src/constants.js";
 
-const routerPosts = require("./src/routes/posts.routes");
-const routerUsers = require("./src/routes/users.routes");
+import routerPosts from "./src/routes/posts.routes.js";
+import routerUsers from "./src/routes/users.routes.js";
 
-const parseJson = require("./src/middlewares/parseJson");
-const parseUrl = require("./src/middlewares/parseUrl");
+import parseJson from "./src/middlewares/parseJson.js";
+import parseUrl from "./src/middlewares/parseUrl.js";
 
 const app = new App();
 

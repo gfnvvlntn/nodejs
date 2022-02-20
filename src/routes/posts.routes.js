@@ -1,9 +1,9 @@
-const Router = require("../utils/Router");
-const postController = require("../controllers/posts.controller");
+import Router from "../utils/Router.js";
+import postController from "../controllers/posts.controller.js";
 
 const routerPosts = new Router();
 
 routerPosts.get("/posts", postController.getPosts);
 routerPosts.post("/posts", postController.addPost);
 
-module.exports = routerPosts;
+export default routerPosts;

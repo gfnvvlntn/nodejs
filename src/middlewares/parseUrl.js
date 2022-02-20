@@ -1,4 +1,4 @@
-module.exports = (baseUrl) => (req, res) => {
+export default (baseUrl) => (req, res) => {
   const parsedUrl = new URL(req.url, baseUrl);
   const params = {};
   parsedUrl.searchParams.forEach((value, key) => (params[key] = value));

@@ -1,4 +1,4 @@
-module.exports = (req, res) => {
+export default (req, res) => {
   res.writeHead(200, {
     "Content-Type": "application/json",
   });

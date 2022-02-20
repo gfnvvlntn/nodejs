@@ -1,9 +1,9 @@
-const Router = require("../utils/Router");
-const userController = require("../controllers/users.controller");
+import Router from "../utils/Router.js";
+import userController from "../controllers/users.controller.js";
 
 const routerUsers = new Router();
 
 routerUsers.get("/users", userController.getUsers);
 routerUsers.post("/users", userController.addUser);
 
-module.exports = routerUsers;
+export default routerUsers;

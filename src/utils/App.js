@@ -1,7 +1,7 @@
-const http = require("http");
-const EventEmitter = require("events");
+import http from "http";
+import EventEmitter from "events";
 
-module.exports = class App {
+export default class App {
   constructor() {
     this.emitter = new EventEmitter();
     this.server = this._createServer();
@@ -55,4 +55,4 @@ module.exports = class App {
   _getRouteMask(path, method) {
     return `[${path}]:[${method}]`;
   }
-};
+}

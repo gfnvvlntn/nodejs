@@ -1,4 +1,4 @@
-module.exports = class Router {
+export default class Router {
   constructor() {
     this.endpoints = {};
   }
@@ -21,4 +21,4 @@ module.exports = class Router {
   post(path, handler) {
     this.request("POST", path, handler);
   }
-};
+}
